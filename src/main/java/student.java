@@ -13,6 +13,9 @@ public class student {
     private String studentBName;
     private String studentBEmail;
     private String courseBName;
+    private String studentCName;
+    private String studentCEmail;
+    private String courseCName;
 
 
     //Setters
@@ -51,6 +54,11 @@ public class student {
         return courseBName;
     }
 
+    public student(String studentCName, String studentCEmail, String courseCName){
+        this.studentCName = studentCName;
+        this.studentCEmail = studentCEmail;
+        this.courseCName = courseCName;
+    }
 
 
     public void displayInfo1() {
@@ -58,5 +66,8 @@ public class student {
     }
     public void displayInfo2() {
         System.out.println("\nStudent Name: " + studentBName + "\nStudent Email: " + studentBEmail + "\nCourse Name: " + getCourseBName());
+    }
+    public void displayInfo3() {
+        System.out.println("\nStudent Name: " + studentCName + "\nStudent Email: " + studentCEmail + "\nCourse Name: " + courseCName);
     }
 }
