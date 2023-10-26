@@ -13,6 +13,7 @@ public class Main {
 
     public static void main(String[]args){
         String firstName;
+        String NameC,EmailC,CourseC;
         Scanner scanner = new Scanner(System.in);
         ie.atu.student user1 = new ie.atu.student();
 
@@ -32,8 +33,16 @@ public class Main {
         System.out.print("Enter Course Name: ");
         user2.setCourseBName(scanner.nextLine());
 
+        System.out.print("Enter First Name: ");
+        NameC = scanner.nextLine();
+        System.out.print("Enter Email: ");
+        EmailC = scanner.nextLine();
+        System.out.print("Enter Course Name: ");
+        CourseC = scanner.nextLine();
+        ie.atu.student user3 = new ie.atu.student(NameC,EmailC,CourseC);
 
         user1.displayInfo1();
         user2.displayInfo2();
+        user3.displayInfo3();
     }
 }
