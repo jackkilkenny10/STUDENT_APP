@@ -10,7 +10,9 @@ public class student {
     private String studentName;
     private String studentEmail;
     private String courseName;
-
+    private String studentBName;
+    private String studentBEmail;
+    private String courseBName;
 
 
     //Setters
@@ -22,18 +24,10 @@ public class student {
         this.courseName = courseName;
     }
 
-
-
     //Getters
-    public String getStudentName(){
-        return studentName;
-    }
-    public String getStudentEmail(){
-        return studentEmail;
-    }
-    public String getCourseName(){
-        return courseName;
-    }
+    public String getStudentName(){return studentName;}
+    public String getStudentEmail(){return studentEmail;}
+    public String getCourseName(){return courseName;}
 
     public student(){
         this.studentName = "DefaultName";
@@ -41,8 +35,28 @@ public class student {
         this.courseName = "DefaultCourse";
     }
 
+    public student(String studentBName){
+        this.studentBName = studentBName;
+    }
+    public void setStudentBEmail(String studentBEmail){
+        this.studentBEmail = studentBEmail;
+    }
+    public void setCourseBName(String courseBName){
+        this.courseBName = courseBName;
+    }
+    public String getStudentBEmail(){
+        return studentBEmail;
+    }
+    public String getCourseBName(){
+        return courseBName;
+    }
 
-    public void displayInfo() {
+
+
+    public void displayInfo1() {
         System.out.println("\nStudent Name: " + getStudentName() + "\nStudent Email: " + getStudentEmail() + "\nCourse Name: " + getCourseName());
+    }
+    public void displayInfo2() {
+        System.out.println("\nStudent Name: " + studentBName + "\nStudent Email: " + studentBEmail + "\nCourse Name: " + getCourseBName());
     }
 }
